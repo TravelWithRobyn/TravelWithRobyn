@@ -59,13 +59,13 @@
       <div class="max-w-3xl mx-auto text-center space-y-6">
         <h2 class="text-4xl md:text-5xl font-semibold">Ready to Start Your Adventure?</h2>
         <p class="text-lg leading-relaxed max-w-2xl mx-auto">Fill out the form below,<br />email <a href="mailto:Robyn@GriswoldTravel.com" class="underline font-medium">Robyn@GriswoldTravel.com</a>,<br />or <a href="https://www.instagram.com/travelwithrobynb/" target="_blank" class="underline font-medium">check out my trips and travel advice on Instagram</a>.</p>
-        <form class="grid gap-6 text-left">
-          <input type="text" placeholder="Full Name" class="w-full p-5 rounded-lg text-gray-900" required />
-          <input type="email" placeholder="Email Address" class="w-full p-5 rounded-lg text-gray-900" required />
-          <textarea rows="5" placeholder="Tell me about your dream trip" class="w-full p-5 rounded-lg text-gray-900" required></textarea>
+        <form name="contact" method="POST" data-netlify="true" class="grid gap-6 text-left">
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="text" name="name" placeholder="Full Name" class="w-full p-5 rounded-lg text-gray-900" required />
+          <input type="email" name="email" placeholder="Email Address" class="w-full p-5 rounded-lg text-gray-900" required />
+          <textarea name="message" rows="5" placeholder="Tell me about your dream trip" class="w-full p-5 rounded-lg text-gray-900" required></textarea>
           <button type="submit" class="bg-white text-teal-600 font-semibold py-4 px-10 rounded-full shadow-xl hover:bg-gray-100 transition">Send Inquiry</button>
         </form>
-        
       </div>
     </section>
 
